@@ -1,0 +1,9 @@
+@font-face{
+  font-family: Dean-font;
+  src:url('../font/Chakra/ChakraPetch-Light.ttf');
+}
+
+body{
+  font-family: Dean-font;
+  margin: 0;
+}
