@@ -6,4 +6,54 @@
 body{
   font-family: Dean-font;
   margin: 0;
+  font-size: 12px;
 }
+table{
+  text-align: left;
+ border-collapse: collapse;
+ width: 80vw;
+}
+table, th, td{
+  border: 1px solid forestgreen;
+}
+th{
+  font-size: 16px;
+  /* padding: 10px; */
+  width: 33%;
+}
+div{
+  padding: 10px 10px;
+}
+marker{
+  background-color: black;
+  color: chartreuse;
+  padding:  0 5px;
+  margin: 0 2px;
+  border-radius: 10px;
+}
+p{
+  margin: 10 0px;
+  padding: 10px 0;
+}
+.th-code{
+  padding-left: 10px;
+  height: 160px;
+  background-color: black;
+  color: chartreuse;
+  /* text-align: center; */
+  font-size: 12px;
+  
+}
+.td-code{
+  height: 160px;
+  padding-left: 10px;
+  /* padding: 0 50px; */
+  background-color: black;
+  color: chartreuse;
+}
+/* .w-120{
+  width: 120px;
+}
+.w-200{
+  width:200px;
+} */

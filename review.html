@@ -1,12 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>REVIEW</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
+
 <body>
-  <h1>CSS</h1>
+  <h3>1. CSS syntax ประกอบด้วยอะไรบ้าง</h3>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="3">Ex. Code</th>
+      </tr>
+      <tr>
+        <th class="th-code" colspan="3"> <code>p{ color: blue; font-size: 16px; }</code></th>
+      </tr>
+      <tr>
+        <th>Selector</th>
+        <th>Property</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <td class="w-200">
+        <div>
+          <marker><code>p</code></marker>
+          <p>หมายถึงให้ใช้ selector นี้</p>
+        </div>
+      <td class="w-200">
+        <div>
+          <marker><code>color</code> </marker>
+          <marker><code>font-size</code></marker>
+          <p>หมายถึงการใช้คุณลักษะproperty และในที่นี้คือ สีและขนาดตัวอักษร</p>
+        </div>
+      </td>
+      <td class="w-200">
+        <div>
+          <marker><code>blue</code> </marker>
+          <marker><code>16px</code></marker>
+          <p>หมายถึงกำหนคให้อักษรแสดงสี blue และให้ขนาดอักษรเป็น 16px</p>
+        </div>
+      </td>
+    </tbody>
+  </table>
+  <h3>2. การเขียน CSS มีกี่แบบอะไรบ้าง</h3>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="3">Ex. Code</th>
+      </tr>
+      <tr>
+        <td class="td-code">
+          <p><code>&#060;body&#62;</p>  
+          <p>&#060;style&#062;</p>
+           p{color:blue;font-size:16px;}
+          <p>&#060;/style&#062;</p>
+          <p>&#060;/body&#62;</code></p>
+        </td>
+        <td class="td-code">
+          <p><code>&#060;head&#62;</p>  
+           link rel="stylesheet" href="css/style.css" 
+          <p>&#060;/head&#62;</code></p>
+        </td>
+        <td class="td-code">
+          <p><code>&#060;body&#62;</p>  
+            &#060;p style="color:blue;font-size:16px;"&#62; Text &#060;/p&#62;
+           <p>&#060;/body&#62;</code></p>
+        </td>
+      </tr>
+      <tr>
+        <th>Internal CSS</th>
+        <th>External CSS</th>
+        <th>Inline CSS</th>
+      </tr>
+    </thead>
+    <tbody>
+      <td>
+        <div>*Lorem, ipsum dolor.</div>
+      <td>
+        <div>*Lorem, ipsum dolor.</div>
+      </td>
+      <td>
+        <div>*Lorem, ipsum dolor.</div>
+      </td>
+    </tbody>
+  </table>
 </body>
+
 </html>
