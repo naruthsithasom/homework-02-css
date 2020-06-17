@@ -9,364 +9,665 @@
 </head>
 
 <body>
-  <table>
-    <thead>
-      <tr>
-        <th colspan="3"> 1. CSS syntax ประกอบด้วยอะไรบ้าง Ex. Code</th>
-      </tr>
-      <tr>
-        <th class="th-code" colspan="3"> <code>p{ color: blue; font-size: 16px; }</code></th>
-      </tr>
-      <tr>
-        <th>Selector</th>
-        <th>Property</th>
-        <th>Value</th>
-      </tr>
-    </thead>
-    <tbody>
-      <td class="w-200">
-        <div>
+  <header class='wrap-haeder'>
+    <nav>
+      <h3>Home work css-02</h3>
+    </nav>
+  </header>
+  <div class='wrap'>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="3"> 1. CSS syntax ประกอบด้วยอะไรบ้าง Ex. Code</th>
+        </tr>
+        <tr>
+          <th class="th-code" colspan="3"> <code>p{ color: blue; font-size: 16px; }</code></th>
+        </tr>
+        <tr>
+          <th>Selector</th>
+          <th>Property</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <td class="w-200">
           <marker><code>p</code></marker>
-          <p>หมายถึงให้ใช้ selector นี้</p>
-        </div>
-      <td class="w-200">
-        <div>
+          <p>selector หมายถึงให้ใช้ &#60;p&#62; นี้</p>
+        <td class="w-200">
           <marker><code>color</code> </marker>
           <marker><code>font-size</code></marker>
-          <p>หมายถึงการใช้คุณลักษะproperty และในที่นี้คือ สีและขนาดตัวอักษร</p>
-        </div>
-      </td>
-      <td class="w-200">
-        <div>
+          <p>property หมายถึงการใช้คุณลักษะ และในที่นี้คือ สี, ขนาดตัวอักษร</p>
+        </td>
+        <td class="w-200">
           <marker><code>blue</code> </marker>
           <marker><code>16px</code></marker>
-          <p>หมายถึงกำหนคให้อักษรแสดงสี blue และให้ขนาดอักษรเป็น 16px</p>
-        </div>
-      </td>
-    </tbody>
-  </table>
-<br>
-  <table>
-    <thead>
-      <tr>
-        <th colspan="3"> 2. การเขียน CSS มีกี่แบบอะไรบ้าง Ex. Code</th>
-      </tr>
-      <tr>
-        <td class="td-code">
-          <p><code>&#060;body&#62;</p>  
+          <p>Value หมายถึงกำหนคให้อักษรแสดงสี blue และให้ขนาดอักษรเป็น 16px</p>
+
+        </td>
+      </tbody>
+    </table>
+    <br>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="3"> 2. การเขียน CSS มีกี่แบบอะไรบ้าง Ex. Code</th>
+        </tr>
+        <tr>
+          <td class="td-code">
+            <p><code>&#060;body&#62;</p>  
           <p>&#060;style&#062;</p>
            p{color:blue;font-size:16px;}
           <p>&#060;/style&#062;</p>
           <p>&#060;/body&#62;</code></p>
-        </td>
-        <td class="td-code">
-          <p><code>&#060;head&#62;</p>  
+          </td>
+          <td class="td-code">
+            <p><code>&#060;head&#62;</p>  
            link rel="stylesheet" href="css/style.css" 
           <p>&#060;/head&#62;</code></p>
-        </td>
-        <td class="td-code">
-          <p><code>&#060;body&#62;</p>  
+          </td>
+          <td class="td-code">
+            <p><code>&#060;body&#62;</p>  
             &#060;p style="color:blue;font-size:16px;"&#62; Text &#060;/p&#62;
            <p>&#060;/body&#62;</code></p>
+          </td>
+        </tr>
+        <tr>
+          <th>Internal CSS</th>
+          <th>External CSS</th>
+          <th>Inline CSS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <td>
+          แบบที่ 1 (Internal CSS) คือการนำtag &#060;style&#062; ไว้ใน &#060;body&#062;
+        <td>
+          แบบที่ 2 (External CSS) คือการนำไฟล์ .css แยกไว้นอกโฟลเดอร์ และะต้องใส่ไว้ใน tag "link" ซึ่งจะอยู่ใน
+          &#60;haed&#62;
         </td>
-      </tr>
-      <tr>
-        <th>Internal CSS</th>
-        <th>External CSS</th>
-        <th>Inline CSS</th>
-      </tr>
-    </thead>
-    <tbody>
-      <td>
-        <div>*Lorem, ipsum dolor.</div>
-      <td>
-        <div>*Lorem, ipsum dolor.</div>
-      </td>
-      <td>
-        <div>*Lorem, ipsum dolor.</div>
-      </td>
-    </tbody>
-  </table>
-<br>
-  <table>
-    <thead>
-      <tr>
-        <th colspan="3">1.3 selector มีกี่แบบอะไรบ้าง</th>
-      </tr>
-      <tr>
-        <th>Selector</th>
-        <th>Example</th>
-        <th>Example description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><marker>.class</marker></td>
-        <td><marker>.intro</marker></td>
-        <td>Selects all elements with class="intro"</td>
-      </tr>
-      <tr>
-        <td><marker>.class1.class2</marker></td>
-        <td><marker>.name1.name2</marker></td>
-        <td>Selects all elements with both name1 and name2 set within its class attribute</td>
-      </tr>
-      <tr>
-        <td><marker>.class1</marker> <marker>.class2</marker></td>
-        <td>.name1 .name2</td>
-        <td>Selects all elements with name2 that is a descendant of an element with name1</td>
-      </tr>
-      <tr>
-        <td>#id</td>
-        <td>#firstname</td>
-        <td>Selects the element with id="firstname</td>
-      </tr>
-      <tr>
-        <td>*</td>
-        <td>*</td>
-        <td>Selects all elements</td>
-      </tr>
-      <tr>
-        <td>element/td>
-        <td>p</td>
-        <td>Selects all &#60; p &#62; elements</td>
-      </tr>
-      <tr>
-        <td>element.class</td>
-        <td>p.intro</td>
-        <td>Selects all  &#60; p &#62; elements with class="intro"</td>
-      </tr>
-      <tr>
-        <td>element,element</td>
-        <td>div, p</td>
-        <td>Selects all &#60;div&#62; elements and all  &#60; p &#62; elements</td>
-      </tr>
-      <tr>
-        <td>element element</td>
-        <td>div p</td>
-        <td>Selects all  &#60; p &#62; elements inside &#60;div&#62; elements</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+        <td>
+          แบบที่ 3 (Inline CSS) คือการเขียน stylecss ไว้ใน element นั้นๆ
+        </td>
+      </tbody>
+    </table>
+    <br>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="3">1.3 selector มีกี่แบบอะไรบ้าง</th>
+        </tr>
+        <tr>
+          <th>Selector</th>
+          <th>Example</th>
+          <th>Example description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <marker>.class</marker>
+          </td>
+          <td>
+            <marker>.intro</marker>
+          </td>
+          <td>Selects all elements with <code><marker>class="intro"</marker></code></td>
+        </tr>
+        <tr>
+          <td>
+            <marker>.class1.class2</marker>
+          </td>
+          <td>
+            <marker>.name1.name2</marker>
+          </td>
+          <td>Selects all elements with both name1 and name2 set within its class attribute</td>
+        </tr>
+        <tr>
+          <td>
+            <marker>.class1</marker>
+            <marker>.class2</marker>
+          </td>
+          <td>
+            <marker>.name1</marker>
+            <marker>.name2</marker>
+          </td>
+          <td>Selects all elements with name2 that is a descendant of an element with name1</td>
+        </tr>
+        <tr>
+          <td>
+            <marker>#id</marker>
+          </td>
+          <td>
+            <marker>#firstname</marker>
+          </td>
+          <td>Selects the element with <code><marker>id="firstname</marker></code></td>
+        </tr>
+        <tr>
+          <td>
+            <marker>*</marker>
+          </td>
+          <td>
+            <marker>*</marker>
+          </td>
+          <td>Selects all elements</td>
+        </tr>
+        <tr>
+          <td>
+            <marker>element</marker>
+          </td>
+          <td>
+            <marker>p</marker>
+          </td>
+          <td>Selects all <marker>&#60;p&#62;</marker> elements</td>
+        </tr>
+        <tr>
+          <td>
+            <marker>element.class</marker>
+          </td>
+          <td>
+            <marker>p.intro</marker>
+          </td>
+          <td>Selects all <marker>&#60;p&#62;</marker> elements with <marker>class="intro"</marker>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>element,element</marker>
+          </td>
+          <td>
+            <marker>div, p</marker>
+          </td>
+          <td>Selects all <marker>&#60;div&#62;</marker> elements and all <marker>&#60;p&#62;</marker> elements</td>
+        </tr>
+        <tr>
+          <td>
+            <marker>element</marker>
+            <marker>element</marker>
+          </td>
+          <td>
+            <marker>div</marker>
+            <marker>p</marker>
+          </td>
+          <td>Selects all <marker>&#60;p&#62;</marker> elements inside <marker>&#60;div&#62;</marker> elements</td>
+        </tr>
+        <tr>
+          <td>
+            <marker>element > element</marker>
+          </td>
+          <td>
+            <marker>div > p </marker>
+          </td>
+          <td>Selects all <marker>&#60;p&#62;</marker> elements where the parent is a
+            <div> element
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>element + element</marker>
+          </td>
+          <td>
+            <marker>div + p</marker>
+          </td>
+          <td>Selects all <marker>&#60;p&#62;</marker> elements that are placed immediately after
+            <div> elements
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>element1 ~ element2 </marker>
+          </td>
+          <td>
+            <marker>p ~ ul</marker>
+          </td>
+          <td>Selects every <marker>&#60;ul&#62;</marker> element that are preceded by a <marker>&#60;p&#62;</marker>
+            element</td>
+        </tr>
+        <tr>
+          <td>
+            <marker>[attribute]</marker>
+          </td>
+          <td>
+            <marker>[target] </marker>
+          </td>
+          <td>Selects all elements with a target attribute</td>
+        </tr>
+        <tr>
+          <td>
+            <marker>[attribute = value]</marker>
+          </td>
+          <td>
+            <marker>[target = _blank]</marker>
+          </td>
+          <td>Selects all elements with a title attribute containing the word "flower"
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>[attribute |= value]</marker>
+          </td>
+          <td>
+            <marker>[lang |= en]</marker>
+          </td>
+          <td>Selects all elements with a lang attribute value starting with <mark>"en"</mark>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>[attribute ^= value]</marker>
+          </td>
+          <td>
+            <marker>a[href ^= "https"]</marker>
+          </td>
+          <td>Selects every <marker>&#60;a&#62;</marker> element whose href attribute value begins with
+            <mark>"https"</mark></td>
+        </tr>
+        <tr>
+          <td>
+            <marker>[attribute $= value]</marker>
+          </td>
+          <td>
+            <marker>a[href $= ".pdf"] </marker>
+          </td>
+          <td>Selects every <marker>&#60;a&#62;</marker> element whose href attribute value ends with
+            <mark>".pdf"</mark>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>[attribute *=v alue]</marker>
+          </td>
+          <td>
+            <marker>a[href *= "w3schools"]</marker>
+          </td>
+          <td>Selects every <marker>&#60;a&#62;</marker> element whose href attribute value contains the substring
+            <mark>"w3schools"</mark>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>:active</marker>
+          </td>
+          <td>
+            <marker>a:active</marker>
+          </td>
+          <td>Selects the active link
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>::after</marker>
+          </td>
+          <td>
+            <marker>p::after</marker>
+          </td>
+          <td>Insert something after the content of each <marker>&#60;p&#62;</marker> element
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>::before</marker>
+          </td>
+          <td>
+            <marker>p::before</marker>
+          </td>
+          <td>Insert something before the content of each <marker>&#60;p&#62;</marker> element
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>:checked</marker>
+          </td>
+          <td>
+            <marker>input:checked</marker>
+          </td>
+          <td>Selects every checked <marker>&#60;input&#62;</marker> element
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>:default</marker>
+          </td>
+          <td>
+            <marker>input:default</marker>
+          </td>
+          <td>Selects the default <marker>&#60;input&#62;</marker> element
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>:disabled</marker>
+          </td>
+          <td>
+            <marker>input:disabled </marker>
+          </td>
+          <td>Selects every disabled <marker>&#60;input&#62;</marker> element
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>:empty</marker>
+          </td>
+          <td>
+            <marker>p:empty</marker>
+          </td>
+          <td>Selects every <marker>&#60;p&#62;</marker> element that has no children (including text nodes)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>:enabled</marker>
+          </td>
+          <td>
+            <marker>input:enabled</marker>
+          </td>
+          <td>Selects every enabled <marker>&#60;input&#62;</marker> element
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>:first-child</marker>
+          </td>
+          <td>
+            <marker>p:first-child </marker>
+          </td>
+          <td>Selects every <marker>&#60;p&#62;</marker> element that is the first child of its parent</td>
+        </tr>
+        <tr>
+          <td>
+            <marker>::first-letter</marker>
+          </td>
+          <td>
+            <marker>p::first-letter</marker>
+          </td>
+          <td>Selects the first letter of every <marker>&#60;p&#62;</marker> element
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>::first-line</marker>
+          </td>
+          <td>
+            <marker>p::first-line </marker>
+          </td>
+          <td>Selects the first line of every <marker>&#60;p&#62;</marker> element
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>:first-of-type</marker>
+          </td>
+          <td>
+            <marker>p:first-of-type</marker>
+          </td>
+          <td>Selects every <marker>&#60;p&#62;</marker> element that is the first <marker>&#60;p&#62; </marker>element
+            of its parent
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>:focus</marker>
+          </td>
+          <td>
+            <marker>input:focus </marker>
+          </td>
+          <td>Selects the input element which has focus
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>:hover</marker>
+          </td>
+          <td>
+            <marker>a:hover</marker>
+          </td>
+          <td>Selects links on mouse over</td>
+        </tr>
+        <tr>
+          <td>
+            <marker>:in-range</marker>
+          </td>
+          <td>
+            <marker>input:in-range</marker>
+          </td>
+          <td>Selects input elements with a value within a specified range
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>:indeterminate</marker>
+          </td>
+          <td>
+            <marker>input:invalid</marker>
+          </td>
+          <td>Selects all input elements with an invalid value
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>:lang(language)</marker>
+          </td>
+          <td>
+            <marker>p:lang(it)</marker>
+          </td>
+          <td>Selects every <marker>&#60;p&#62;</marker> element with a lang attribute equal to "it" (Italian)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>:last-child</marker>
+          </td>
+          <td>
+            <marker>p:last-child</marker>
+          </td>
+          <td>Selects every <marker>&#60;p&#62;</marker> element that is the last child of its parent
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>:last-of-type</marker>
+          </td>
+          <td>
+            <marker>p:last-of-type</marker>
+          </td>
+          <td>Selects every <maker>&#60;p&#62;</maker> element that is the last <marker>&#60;p&#62;</marker> element of
+            its parent
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>:link</marker>
+          </td>
+          <td>
+            <marker>a:link</marker>
+          </td>
+          <td>Selects all unvisited links
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>:not(selector)</marker>
+          </td>
+          <td>
+            <marker>:not(p)</marker>
+          </td>
+          <td>Selects every element that is not a <marker>&#60;p&#62;</marker> element
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>:nth-child(n)</marker>
+          </td>
+          <td>
+            <marker>p:nth-child(2)</marker>
+          </td>
+          <td>Selects every <marker>&#60;p&#62;</marker> element that is the second child of its parent
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>:nth-last-child(n)</marker>>
+          </td>
+          <td>
+            <marker>p:nth-last-child(2) </marker>
+          </td>
+          <td> Selects every <marker>&#60;p&#62;</marker> element that is the second child of its parent, counting from
+            the last child </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>:nth-last-of-type(n)</marker>
+          </td>
+          <td>
+            <marker>:nth-last-of-type(n)</marker>
+          </td>
+          <td>Selects every <marker>&#60;p&#62;</marker> element that is the second <marker>&#60;p&#62;</marker> element
+            of its parent, counting from the last child</td>
+        </tr>
+        <tr>
+          <td>
+            <marker>:nth-of-type(n)</marker>
+          </td>
+          <td>
+            <marker>p:nth-last-of-type(2)</marker>
+          </td>
+          <td>Selects every<marker> &#60;p&#62;</marker> element that is the second <marker>&#60;p&#62;</marker> element
+            of its parent
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>:only-of-type</marker>
+          </td>
+          <td>
+            <marker>p:only-of-type</marker>
+          </td>
+          <td>Selects every<marker> &#60;p&#62;</marker> element that is the only <marker>&#60;p&#62;</marker> element
+            of its parent
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>:only-child</marker>
+          </td>
+          <td>
+            <marker>p:only-child</marker>
+          </td>
+          <td>Selects every <marker>&#60;p&#62;</marker> element that is the only child of its parent
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>:optional</marker>
+          </td>
+          <td>
+            <marker>input:optional</marker>
+          </td>
+          <td>
+            <marker>input:optional</marker>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>:out-of-range</marker>
+          </td>
+          <td>
+            <marker>input:out-of-range</marker>
+          </td>
+          <td>Selects input elements with a value outside a specified range
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>::placeholder</marker>
+          </td>
+          <td>
+            <marker>input::placeholder</marker>
+          </td>
+          <td>Selects input elements with the <mark>"placeholder"</mark> attribute specified
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>:read-only</marker>
+          </td>
+          <td>
+            <marker>input:read-only</marker>
+          </td>
+          <td>Selects input elements with the <mark>"readonly"</mark> attribute specified
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>:read-write</marker>
+          </td>
+          <td>
+            <marker>input:read-write</marker>
+          </td>
+          <td>Selects input elements with the <mark>"readonly"</mark> attribute NOT specified
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>:required</marker>
+          </td>
+          <td>
+            <marker>input:required</marker>
+          </td>
+          <td>Selects input elements with the "required" attribute specified
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>:root</marker>
+          </td>
+          <td>
+            <marker>:root</marker>
+          </td>
+          <td>Selects the document's root element
+          </td>
+        </tr>
+        <tr>
+        </tr>
+        <td>
+          <marker>::selection</marker>
+        </td>
+        <td>
+          <marker>::selection </marker>
+        </td>
+        <td>Selects the portion of an element that is selected by a user
+        </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>:target</marker>
+          </td>
+          <td>
+            <marker>#news:target</marker>
+          </td>
+          <td>Selects the current active #news element (clicked on a URL containing that anchor name)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>:valid</marker>
+          </td>
+          <td>
+            <marker>input:valid</marker>
+          </td>
+          <td>Selects all input elements with a valid value
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <marker>:visited</marker>
+          </td>
+          <td>
+            <marker>a:visited</marker>
+          </td>
+          <td>Selects all visited links
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
 
 </html>

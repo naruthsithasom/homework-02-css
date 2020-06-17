@@ -6,19 +6,43 @@
 body{
   font-family: Dean-font;
   margin: 0;
-  font-size: 12px;
+  font-size: 14px;
+}
+.wrap-haeder{
+ display: flex;
+}
+.wrap-haeder > nav{
+  position: fixed;
+  width: 100vw;
+  height: 100px;
+  background-color: chartreuse;
+  color: black;
+  text-align: center;
+  z-index: 1;
+}
+.wrap{
+  position: absolute;
+  /* margin: 20px 20px; */
+  top: 100px;
 }
 table{
   text-align: left;
  border-collapse: collapse;
- width: 80vw;
+ border: 1px solid forestgreen;
+ /* width: 80vw; */
+ width: 100%;
 }
-table, th, td{
-  border: 1px solid forestgreen;
+table, th{
+  /* border: 1px solid forestgreen; */
+}
+td{
+padding-left: 10px;
+line-height:1.8;
 }
 th{
-  font-size: 16px;
-  /* padding: 10px; */
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 10px;
   width: 33%;
 }
 div{
@@ -32,8 +56,8 @@ marker{
   border-radius: 10px;
 }
 p{
-  margin: 10 0px;
-  padding: 10px 0;
+  /* margin: 15 0px;
+  padding: 15px 0; */
 }
 .th-code{
   padding-left: 10px;
@@ -47,13 +71,6 @@ p{
 .td-code{
   height: 160px;
   padding-left: 10px;
-  /* padding: 0 50px; */
   background-color: black;
   color: chartreuse;
 }
-/* .w-120{
-  width: 120px;
-}
-.w-200{
-  width:200px;
-} */
