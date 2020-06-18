@@ -9,16 +9,26 @@
 </head>
 
 <body>
-  <header class='wrap-haeder'>
-    <nav>
-      <h3>Home work css-02</h3>
+  <header class='nav'>
+    <nav class='box1-1'>
+        <div class='nav-icon'><a href='index.html'><img src='photo/icons8-home-50.png' width='30' height='30'></a>
+        </div>
+        <div class='nav-icon'><a href='profile.html'><img src='photo/icons8-user-50.png' width='30' height='30'></a>
+        </div>
+        </nav>
+
+    <nav class='box1-2'>
+        <div class='nav-text'><a href='index.html'>Home</a></div>
+        <div class='nav-text'><a href='profile.html'>Profile</a></div>
     </nav>
   </header>
-  <div class='wrap'>
+
+  <main class='container'>
+    <section>
     <table>
       <thead>
         <tr>
-          <th colspan="3"> 1. CSS syntax ประกอบด้วยอะไรบ้าง Ex. Code</th>
+          <th colspan="3"> 1.1 CSS syntax ประกอบด้วยอะไรบ้าง Ex. Code</th>
         </tr>
         <tr>
           <th class="th-code" colspan="3"> <code>p{ color: blue; font-size: 16px; }</code></th>
@@ -30,6 +40,7 @@
         </tr>
       </thead>
       <tbody>
+        <tr>
         <td class="w-200">
           <marker><code>p</code></marker>
           <p>selector หมายถึงให้ใช้ &#60;p&#62; นี้</p>
@@ -44,13 +55,16 @@
           <p>Value หมายถึงกำหนคให้อักษรแสดงสี blue และให้ขนาดอักษรเป็น 16px</p>
 
         </td>
+      </tr>
       </tbody>
     </table>
+    </section>
     <br>
+    <section>
     <table>
       <thead>
         <tr>
-          <th colspan="3"> 2. การเขียน CSS มีกี่แบบอะไรบ้าง Ex. Code</th>
+          <th colspan="3"> 1.2 การเขียน CSS มีกี่แบบอะไรบ้าง Ex. Code</th>
         </tr>
         <tr>
           <td class="td-code">
@@ -89,7 +103,9 @@
         </td>
       </tbody>
     </table>
+    </section>
     <br>
+    <section>
     <table>
       <thead>
         <tr>
@@ -503,7 +519,7 @@
         </tr>
         <tr>
           <td>
-            <marker>:nth-last-child(n)</marker>>
+            <marker>:nth-last-child(n)</marker>
           </td>
           <td>
             <marker>p:nth-last-child(2) </marker>
@@ -625,7 +641,6 @@
           </td>
         </tr>
         <tr>
-        </tr>
         <td>
           <marker>::selection</marker>
         </td>
@@ -667,7 +682,56 @@
         </tr>
       </tbody>
     </table>
-  </div>
+    </section>
+    <br>
+    <section>
+    <table>
+      <thead>
+        <tr>
+          <th> 1.4 combinator มีกี่แบบอะไรบ้าง</th>
+        </tr>      
+      </thead>
+      <tbody>
+        <tr>
+          <td><h3>แบบที่ 1. Descendant Selector</h3></td>
+        </tr>
+        <tr>
+          <td > <h3><code><marker>div p { background-color: yellow;}</marker></code></h3></td>
+        </tr>
+        <tr>
+          <td >The descendant selector matches all elements that are descendants of a specified element.The following example selects all &#60;p&#62; elements inside &#60;div&#62; elements: </td>
+        </tr>
+        <tr>
+          <td><h3>แบบที่ 2. Child Selector</h3></td>
+        </tr>
+        <tr>
+          <td > <h3><code><marker>div > p { background-color: yellow;}</marker></code></h3></td>
+        </tr>
+        <tr>
+          <td >The child selector selects all elements that are the children of a specified element.The following example selects all &#60;p&#62; elements that are children of a &#60;div&#62; element:</td>
+        </tr>
+        <tr>
+          <td><h3>แบบที่ 3. Adjacent Sibling Selector</h3></td>
+        </tr>
+        <tr>
+          <td > <h3><code><marker >div + p {background-color: yellow;}</marker></code></h3></td>
+        </tr>
+        <tr>
+          <td >The child selector selects all elements that are the children of a specified element.The following example selects all &#60;p&#62; elements that are children of a &#60;div&#62; element:</td>
+        </tr>
+        <tr>
+          <td><h3>แบบที่ 4. General Sibling Selecto</h3></td>
+        </tr>
+        <tr>
+          <td > <h3><code><marker >div ~ p {background-color: yellow;}</marker></code></h3></td>
+        </tr>
+        <tr>
+          <td >The general sibling selector selects all elements that are siblings of a specified element. The following example selects all &#60;p&#62; elements that are siblings of &#60;div&#62; elements: </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  </main>
 </body>
 
 </html>
