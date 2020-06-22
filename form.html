@@ -58,12 +58,26 @@
                       <option value="bb">*Lorem ipsum dolor sit amet.</option>
                     </select>
                 </td>
-                <td> <button>Edit</button></td>
+                <td> <div class="fileinputs">
+                  <input type="file" class="file">
+                  <div class="fakefile">
+                    <button>Edit</button>
+                  </input>
+                  </div>
+                </div></td>
                 </tr>
                 <tr>
                   <td>Logo:</td>
                   <td class="w20">no logo uploaded</td>
-                  <!-- <td><input type="file" class="input-upload"></td> -->
+                  <td>
+                    <div class="fileinputs">
+                      <input type="file" class="file">
+                      <div class="fakefile">
+                        <button>Upload Logo</button>
+                      </input>
+                      </div>
+                    </div>
+                  </td>
                 </tr>
                 <tr >
                   <td>Template Text:</td>
@@ -74,7 +88,15 @@
                       <option value="bb">Thai</option>
                     </select>
                 </td>
-                <td> <button>Edit</button></td>
+                <td>
+                  <div class="fileinputs">
+                    <input type="file" class="file">
+                    <div class="fakefile">
+                      <button>Edit</button>
+                    </input>
+                    </div>
+                  </div>
+                </td>
                 </tr>
                 <tr >
                   <td>Review Form:</td>
@@ -85,7 +107,43 @@
                       <option value="bb">Thai</option>
                     </select>
                 </td>
-                <td> 
+                <td></td>
+                </tr>
+                <tr>
+                  <td>Review Score:</td>
+                  <td>
+                    <select name="score" id="score" class="select-xl">
+                      <option value="ract">Rating</option>
+                      <option value="aa">aa</option>
+                      <option value="bb">bb</option>
+                      <option value="cc">cc</option>
+                    </select>
+                  </td>
+                  <td>
+                    <div class="fileinputs">
+                      <input type="file" class="file">
+                      <div class="fakefile">
+                        <button>Reload Fields</button>
+                      </input>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Scoring Type:</td>
+                  <td>
+                    <select name="scoring" id="scoring">
+                      <option value="average">Average</option>
+                      <option value="bb">bb</option>
+                      <option value="cc">cc</option>
+                    </select>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Max Score:</td>
+                  <td><input type="txt" class="input-txt" placeholder="4.00"></td>
+                  <td></td>
                 </tr>
               </tbody>
             </table>

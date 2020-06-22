@@ -7,10 +7,8 @@ body{
     font-family: Dean-font;
     font-size: 14px;
 }
-section{
-
-}
 form{
+  
     border: 3px gray solid;
     padding: 6px;
     background-color: gainsboro;
@@ -69,7 +67,9 @@ td > * {
   }
 
   .container > section{
-      margin: 20px 390px;
+      margin: 20px;
+      padding-left: 300px;
+      padding-right:300px;
   }
 
   .input-url[class="input-url"]{
@@ -91,4 +91,21 @@ td > * {
 .input-upload[class="input-upload"]{
     content: Upload Logo;
     display: inline-block;
+}
+div.fileinputs{
+  position: relative;
+}
+div.fakefile{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+input.file{
+  position: relative;
+  text-align: right;
+  -moz-opacity:0 ;
+	filter:alpha(opacity: 0);
+	opacity: 0;
+  z-index: 2;
 }
