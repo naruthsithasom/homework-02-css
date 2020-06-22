@@ -1,156 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form-css02</title>
-    <link rel="stylesheet" href="css/form.css" type="text/css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form-css02</title>
+  <link rel="stylesheet" href="css/form.css" type="text/css">
 </head>
+
 <body>
-    <header class='nav'>
-      <nav class='box1-1'>
-        <div class='nav-icon'><a href='index.html'><img src='photo/icons8-home-50.png' width='30' height='30'></a>
-        </div>
-        <div class='nav-icon'><a href='review.html'><img src='photo/icons8-homework-50.png' width='30' height='30'></a>
-        </div>
-        <div class='nav-icon'><a href='form.html'><img src='photo/icons8-form-50.png' width='30' height='30'></a>
-        </div>
-      </nav>
-  
-      <nav class='box1-2'>
-        <div class='nav-text'><a href='index.html'>Home</a></div>
-        <div class='nav-text'><a href='review.html'>Review</a></div>
-        <div class='nav-text'><a href='form.html'>Form</a></div>
-      </nav>
-      </header>
-    <main class="container">
-        <section>
-          <form action="/index">
-            <table>
-              <thead>
-                <tr>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Name<span style="color: red;">*</span>:</td>
-                  <td colspan="2"><input class="input-txt"type="text" name="name"><img src="photo/icons8-help-100.png" width="30px" height="30"px ></td>
-                </tr>
-                <tr>
-                  <td>Tab Text<span style="color: red;">*</span>:</td>
-                  <td colspan="2"><input class="input-txt"type="text" name="tab"><img src="photo/icons8-help-100.png" width="30px" height="30px"></td>
-                </tr>
-                <tr  >
-                  <td>URL<span style="color: red;">*</span>:</td>
-                  <td colspan="2">http://wizehive.com/webform/<input class="input-url"type="text" name="url"> </td>
-                </tr>
-                <tr>
-                  <td colspan="3" class="bar-1">FORM SETUP</td>
-                </tr>
-                <tr >
-                  <td>Form:</td>
-                  <td >
-                    <select name="form" id="form" class="select-xl">
-                      <option value=""></option>
-                      <option value="bb">*Lorem ipsum dol</option>
-                      <option value="bb">*Lorem, ipsum dolor.</option>
-                      <option value="bb">*Lorem ipsum dolor sit amet.</option>
-                    </select>
-                </td>
-                <td> <div class="fileinputs">
+  <header class='nav'>
+    <nav class='box1-1'>
+      <div class='nav-icon'><a href='https://naruthsithasom.github.io/homework-01-html/index.html'><img src='photo/icons8-home-50.png' width='30' height='30'></a>
+      </div>
+      <div class='nav-icon'><a href='review.html'><img src='photo/icons8-homework-50.png' width='30' height='30'></a>
+      </div>
+      <div class='nav-icon'><a href='form.html'><img src='photo/icons8-form-50.png' width='30' height='30'></a>
+      </div>
+    </nav>
+
+    <nav class='box1-2'>
+      <div class='nav-text'><a href='https://naruthsithasom.github.io/homework-01-html/index.html'>Home</a></div>
+      <div class='nav-text'><a href='review.html'>Review</a></div>
+      <div class='nav-text'><a href='form.html'>Form</a></div>
+    </nav>
+  </header>
+  <main class="container">
+    <section>
+      <form action="/index">
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Name<span style="color: red;">*</span>:</td>
+              <td colspan="2"><input class="input-txt" type="text" name="name"><img src="photo/icons8-help-100.png"
+                  width="30px" height="30" px></td>
+            </tr>
+            <tr>
+              <td>Tab Text<span style="color: red;">*</span>:</td>
+              <td colspan="2"><input class="input-txt" type="text" name="tab"><img src="photo/icons8-help-100.png"
+                  width="30px" height="30px"></td>
+            </tr>
+            <tr>
+              <td>URL<span style="color: red;">*</span>:</td>
+              <td colspan="2">http://wizehive.com/webform/<input class="input-url" type="text" name="url"> </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="bar-1">FORM SETUP</td>
+            </tr>
+            <tr>
+              <td>Form:</td>
+              <td>
+                <select name="form" id="form" class="select-xl">
+                  <option value=""></option>
+                  <option value="bb">*Lorem ipsum dol</option>
+                  <option value="bb">*Lorem, ipsum dolor.</option>
+                  <option value="bb">*Lorem ipsum dolor sit amet.</option>
+                </select>
+              </td>
+              <td>
+                <div class="fileinputs">
                   <input type="file" class="file">
                   <div class="fakefile">
                     <button>Edit</button>
-                  </input>
-                  </div>
-                </div></td>
-                </tr>
-                <tr>
-                  <td>Logo:</td>
-                  <td class="w20">no logo uploaded</td>
-                  <td>
-                    <div class="fileinputs">
-                      <input type="file" class="file">
-                      <div class="fakefile">
-                        <button>Upload Logo</button>
-                      </input>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr >
-                  <td>Template Text:</td>
-                  <td >
-                    <select name="template" id="template" class="select-xl">
-                      <option value="bb">English</option>
-                      <option value="bb">Chainese</option>
-                      <option value="bb">Thai</option>
-                    </select>
-                </td>
-                <td>
-                  <div class="fileinputs">
-                    <input type="file" class="file">
-                    <div class="fakefile">
-                      <button>Edit</button>
                     </input>
-                    </div>
                   </div>
-                </td>
-                </tr>
-                <tr >
-                  <td>Review Form:</td>
-                  <td >
-                    <select name="review" id="review" class="select-xl">
-                      <option value="bb">Default</option>
-                      <option value="bb">Chainese</option>
-                      <option value="bb">Thai</option>
-                    </select>
-                </td>
-                <td></td>
-                </tr>
-                <tr>
-                  <td>Review Score:</td>
-                  <td>
-                    <select name="score" id="score" class="select-xl">
-                      <option value="ract">Rating</option>
-                      <option value="aa">aa</option>
-                      <option value="bb">bb</option>
-                      <option value="cc">cc</option>
-                    </select>
-                  </td>
-                  <td>
-                    <div class="fileinputs">
-                      <input type="file" class="file">
-                      <div class="fakefile">
-                        <button>Reload Fields</button>
-                      </input>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Scoring Type:</td>
-                  <td>
-                    <select name="scoring" id="scoring">
-                      <option value="average">Average</option>
-                      <option value="bb">bb</option>
-                      <option value="cc">cc</option>
-                    </select>
-                  </td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>Max Score:</td>
-                  <td><input type="txt" class="input-txt" placeholder="4.00"></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-            </form>
-          </section>
-           
-    </main>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Logo:</td>
+              <td class="w20">no logo uploaded</td>
+              <td>
+                <div class="fileinputs">
+                  <input type="file" class="file">
+                  <div class="fakefile">
+                    <button>Upload Logo</button>
+                    </input>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Template Text:</td>
+              <td>
+                <select name="template" id="template" class="select-xl">
+                  <option value="bb">English</option>
+                  <option value="bb">Chainese</option>
+                  <option value="bb">Thai</option>
+                </select>
+              </td>
+              <td>
+                <div class="fileinputs">
+                  <input type="file" class="file">
+                  <div class="fakefile">
+                    <button>Edit</button>
+                    </input>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Review Form:</td>
+              <td>
+                <select name="review" id="review" class="select-xl">
+                  <option value="bb">Default</option>
+                  <option value="bb">Chainese</option>
+                  <option value="bb">Thai</option>
+                </select>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Review Score:</td>
+              <td>
+                <select name="score" id="score" class="select-xl">
+                  <option value="ract">Rating</option>
+                  <option value="aa">aa</option>
+                  <option value="bb">bb</option>
+                  <option value="cc">cc</option>
+                </select>
+              </td>
+              <td>
+                <div class="fileinputs">
+                  <input type="file" class="file">
+                  <div class="fakefile">
+                    <button>Reload Fields</button>
+                    </input>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Scoring Type:</td>
+              <td>
+                <select name="scoring" id="scoring">
+                  <option value="average">Average</option>
+                  <option value="bb">bb</option>
+                  <option value="cc">cc</option>
+                </select>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Max Score:</td>
+              <td><input type="txt" class="input-txt" placeholder="4.00"></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </section>
+
+  </main>
 
 </body>
+
 </html>
