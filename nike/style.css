@@ -1,0 +1,33 @@
+@font-face{
+
+}
+body{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size:14px;
+  margin:0px;
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  width: 100vw;
+}
+.header > div {
+  width: 200px;
+  height:200px;
+  background-color: royalblue;
+  border: 1px solid gray;
+}
+.container{
+  display:flex;
+  flex-direction: column;
+}
+.container > section{
+
+}
+.input-search[class="input-search"]{
+
+border:2px solid red;
+background-color: royalblue;
+}
