@@ -7,8 +7,8 @@
   font-size:14px;
   margin:0px;
 } 
-
-.bar1{
+@media screen and (min-width: 900px){
+.nav1{
   display: flex;
   flex-direction: row;
   font-size: 12px;
@@ -17,23 +17,29 @@
   line-height: 40px;
   border: 1px solid #e5e5e5;
 }
-.bar1 > .navLogo{
+.nav1 > .bar1-1{
   border-right: 1px solid #e5e5e5;
   text-align: center;
   /* width: 15%; */
 }
-.navLogo > a{
+.bar1-1 > a{
   padding:  0 20px;
   text-decoration: none;
   color: gray;
 }
-.bar1 > .navRight{
+.nav1 > .bar1-2{
   display: flex;
   justify-content: flex-end;
   width: 85%;
 }
-.navRight > a{
+.bar1-2 > a{
   padding:  0 20px;
   text-decoration: none;
-  color: gray;
+  color: rgb(134, 115, 115);
+}
+}
+@media screen and (max-width: 899px){
+  *{
+    display: none;
+  }
 }
