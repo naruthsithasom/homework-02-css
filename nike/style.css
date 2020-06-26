@@ -2,86 +2,38 @@
   font-family: Dean-font;
   src:url("../nike/font/Kanit/Kanit-Regular.ttf")
 }
-body{
+ body{
   font-family: Dean-font;
   font-size:14px;
   margin:0px;
-}
-p{
-  margin: 0;
-}
-/* .header{ 
+} 
+
+.bar1{
   display: flex;
   flex-direction: row;
-
-  width: 100%;
-}
-.header > div {
-  height: 30px;
   font-size: 12px;
-  opacity: 0.4; 
-}
-.header > .item1{
-width:120px;
-background-color: indianred;
-}
-.header > .item2{
-  width:80px;
-  background-color: indigo;
-}
-.header > .item3{
-  width:100vw;
-  background-color: khaki;
-  text-align: right;
-  padding-right: 20px;
-}
-
-.header > .item4{
-  width: 80px;
-  background-color: lawngreen;
-}
-.header > .item5{
-  width: 80px;
-  background-color: lightseagreen;
-} */
-.header{
-  display: flex;
-  flex-direction: row;
   opacity: 0.5;
+  width: 100%;
+  line-height: 40px;
+  border: 1px solid #e5e5e5;
 }
-.item2{
-position: absolute;
-right: 0;
+.bar1 > .navLogo{
+  border-right: 1px solid #e5e5e5;
+  text-align: center;
+  /* width: 15%; */
 }
-
-ul{
-  list-style: none;
-  padding-inline-start: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
+.navLogo > a{
+  padding:  0 20px;
+  text-decoration: none;
+  color: gray;
 }
-li{
-  display: block;
-  /* padding-left: 20px;
-  padding-right: 20px; */
-}
-/* li{
-  list-style: none;
-  display: inline;
-} */
-.item1 > li{
+.bar1 > .navRight{
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
+  width: 85%;
 }
-.container{
-  display:flex;
-  flex-direction: column;
-}
-.container > section{
-
-}
-.input-search[class="input-search"]{
-
-border:2px solid red;
-background-color: royalblue;
+.navRight > a{
+  padding:  0 20px;
+  text-decoration: none;
+  color: gray;
 }
