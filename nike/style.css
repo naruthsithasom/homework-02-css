@@ -1,6 +1,6 @@
 @font-face{
   font-family: Dean-font;
-  src:url("../nike/font/Kanit/Kanit-Regular.ttf")
+  src:url("../nike/font/Kanit/Kanit-Regular.ttf");
 }
  body{
   font-family: Dean-font;
@@ -37,6 +37,74 @@
   text-decoration: none;
   color: rgb(134, 115, 115);
 }
+}
+
+/*-----------------------------------------------------*/
+
+.nav2{
+  display:flex;
+  flex-direction: row;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  border-bottom: 1px solid #e5e5e5;
+  justify-content: space-between;
+}
+.nav2 > .bar2-1{
+  line-height: 60px;
+ padding: 0 20px 0 40px;
+}
+.nav2 > .bar2-2{
+  display: flex;
+  flex-direction: row;
+}
+.bar2-2 > a {
+  padding: 0 20px;
+  text-decoration:none;
+  color: black;
+}
+.bar2-2 > a:hover{
+  border-bottom: 1px solid black;
+}
+.nav2 > .bar2-3{
+  padding-right: 40px;
+}
+.input-search[class="input-search"]{
+  height: 25px;
+  border: 1px solid #e5e5e5;
+  background: url("../nike/photo/icons8-search-48.png") no-repeat scroll 7px 7px ;
+}
+/*-----------------------------------------------------*/
+
+.nav3{
+  display: block;
+  line-height: 60px;
+}
+.nav3 > .bar3-1{
+  background-color: #f5f5f5;
+  text-align: center;
+  font-size:12px;
+}
+/*-----------------------------------------------------*/
+.nav4{
+  display: flex;
+  line-height: 80px;
+  flex-direction:row;
+  justify-content: center;
+}
+.nav4 > .bar4-1{
+  position: absolute;
+  left: 40px;
+  font-size: 26px;
+}
+.nav4 > .bar4-2{
+  font-size: 18px;
+}
+.bar4-2 > a{
+  font-weight: 100;
+  text-decoration: none;
+  color: black;
+  padding: 0 18px;
 }
 @media screen and (max-width: 899px){
   *{
