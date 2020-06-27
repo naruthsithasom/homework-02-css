@@ -70,9 +70,19 @@
   padding-right: 40px;
 }
 .input-search[class="input-search"]{
-  height: 25px;
+  height: 30px;
   border: 1px solid #e5e5e5;
-  background: url("../nike/photo/icons8-search-48.png") no-repeat scroll 7px 7px ;
+  background: url("../nike/photo/icons8-search-48.png");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: left;
+  opacity: 0.5;
+  background-position-x: 10px;
+  width: 100%;
+}
+::placeholder{
+  color:gray;
+  padding-left: 40px;
 }
 /*-----------------------------------------------------*/
 
@@ -91,6 +101,10 @@
   line-height: 80px;
   flex-direction:row;
   justify-content: center;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background-color: #ffffff;
 }
 .nav4 > .bar4-1{
   position: absolute;
@@ -105,6 +119,20 @@
   text-decoration: none;
   color: black;
   padding: 0 18px;
+}
+/*-----------------------------------------------------*/
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.container > section{
+  height: auto;
+  width: 100%;
+}
+
+.m-lr{
+  margin-left: 40px;
+  margin-right: 40px;
 }
 @media screen and (max-width: 899px){
   *{
